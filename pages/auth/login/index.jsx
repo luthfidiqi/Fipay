@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 import axios from "../../../utils/axios";
-import Cookies from "js-cookie";
+// import Cookies from "js-cookie";
 import { useRouter } from "next/router";
 
 export default function Login() {
-
   const router = useRouter();
 
   const [form, setForm] = useState({
     email: "",
-    password: ""
+    password: "",
   });
 
   const [message, setMessage] = useState("");
@@ -39,8 +38,8 @@ export default function Login() {
         {
           id: 1,
           name: "Luthfi",
-          role: "admin"
-        }
+          role: "admin",
+        },
       ];
       // console.log(resultLogin);
       // Output = suatu keadaan yang dapat diinfokan ke user bahwa proses sudah selesai
@@ -81,78 +80,93 @@ export default function Login() {
           <img src="../assets/image/auth-img.png" />
           <h2>App that Covering Banking Needs.</h2>
           <p className="zwalet-desc">
-          Zwallet is an application that focussing in banking needs for all users in the world. Always updated and always following world trends. 5000+ users registered in Zwallet everyday with worldwide users coverage.
+            Zwallet is an application that focussing in banking needs for all
+            users in the world. Always updated and always following world
+            trends. 5000+ users registered in Zwallet everyday with worldwide
+            users coverage.
           </p>
         </div>
         <div className="auth-right">
-          <h2>Start Accessing Banking Needs With All Devices and All Platforms With 30.000+ Users</h2>
-          <p>Transfering money is eassier than ever, you can access Zwallet wherever you are. Desktop, laptop, mobile phone? we cover all of that for you!</p>
-            <form className="auth-form" onSubmit={handleSubmit} onReset={handleReset}>
-              <div className="auth-form-control mb-3 d-flex align-items-center justify-content-center">
-                <img
-                  alt="mail"
-                  src="../assets/image/mail.png"
-                  className="me-3"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  className="form-control"
-                  placeholder="Enter your e-mail"
-                  value={form.email}
-                  onChange={handleChangeForm}
-                />
-              </div>
-              <div className="auth-form-control mb-3 d-flex align-items-center justify-content-center">
-                <img
-                  alt="lock"
-                  src="../assets/image/lock.png"
-                  className="me-3"
-                />
-                <input
-                  type={showPass ? "text" : "password"}
-                  name="password"
-                  className="form-control"
-                  placeholder="Enter your password"
-                  value={form.password}
-                  onChange={handleChangeForm}
-                />
-                <img
+          <h2>
+            Start Accessing Banking Needs With All Devices and All Platforms
+            With 30.000+ Users
+          </h2>
+          <p>
+            Transfering money is eassier than ever, you can access Zwallet
+            wherever you are. Desktop, laptop, mobile phone? we cover all of
+            that for you!
+          </p>
+          <form
+            className="auth-form"
+            onSubmit={handleSubmit}
+            onReset={handleReset}
+          >
+            <div className="auth-form-control mb-3 d-flex align-items-center justify-content-center">
+              <img alt="mail" src="../assets/image/mail.png" className="me-3" />
+              <input
+                type="email"
+                name="email"
+                className="form-control"
+                placeholder="Enter your e-mail"
+                value={form.email}
+                onChange={handleChangeForm}
+              />
+            </div>
+            <div className="auth-form-control mb-3 d-flex align-items-center justify-content-center">
+              <img alt="lock" src="../assets/image/lock.png" className="me-3" />
+              <input
+                type={showPass ? "text" : "password"}
+                name="password"
+                className="form-control"
+                placeholder="Enter your password"
+                value={form.password}
+                onChange={handleChangeForm}
+              />
+              <img
                 alt="eye"
                 src="../assets/image/eye.png"
                 onClick={handleShowPass}
-                />
-              </div>
-
-              {/* Alert */}
-              {!message ? null : isError ? (
-                <div className="alert alert-danger" role="alert">
-                  {message}
-                </div>
-              ) : (
-                <div className="alert alert-primary" role="alert">
-                  {message}
-                </div>
-              )}
-
-              <div className="forgot-pass d-flex justify-content-end mb-5">
-                <a className="forgot-pass" href="/auth/reset">Forgot Password ?</a>
-              </div>
-
-              <button
-                type="submit"
-                className={
-                  form.email && form.password
-                    ? "auth-btn btn btn-primary"
-                    : "auth-btn btn-disable btn btn-primary"
-                }
-              >
-                Login
-              </button>
-            </form>
-            <div className="signup-link">
-              <p> Don’t have an account? Let’s <span> <a href="/auth/register"> Sign Up </a> </span> </p>
+              />
             </div>
+
+            {/* Alert */}
+            {!message ? null : isError ? (
+              <div className="alert alert-danger" role="alert">
+                {message}
+              </div>
+            ) : (
+              <div className="alert alert-primary" role="alert">
+                {message}
+              </div>
+            )}
+
+            <div className="forgot-pass d-flex justify-content-end mb-5">
+              <a className="forgot-pass" href="/auth/reset">
+                Forgot Password ?
+              </a>
+            </div>
+
+            <button
+              type="submit"
+              className={
+                form.email && form.password
+                  ? "auth-btn btn btn-primary"
+                  : "auth-btn btn-disable btn btn-primary"
+              }
+            >
+              Login
+            </button>
+          </form>
+          <div className="signup-link">
+            <p>
+              {" "}
+              Don’t have an account? Let’s{" "}
+              <span>
+                {" "}
+                <a href="/auth/register"> Sign Up </a>{" "}
+              </span>{" "}
+            </p>
+          </div>
         </div>
       </main>
     </>

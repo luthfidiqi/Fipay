@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import axios from "../../../utils/axios";
-import Cookies from "js-cookie";
-
+import React from "react";
 // import NavbarSignIn from "../../../components/NavbarSignIn";
 
 export default function Home() {
