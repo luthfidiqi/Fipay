@@ -1,34 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Fipay - NEXT JS</h1>
+<h4 align="center">Tickie is a website-based application that can help users in getting the latest fillm information and making online bookings and payment.</h4>
 
-## Getting Started
+<hr>
 
-First, run the development server:
+[![axios](https://img.shields.io/npm/v/axios?label=axios)](https://axios-http.com/docs/intro)
+[![bootstrap](https://img.shields.io/npm/v/bootstrap?label=bootstrap)](https://getbootstrap.com/)
+[![chart.js](https://img.shields.io/npm/v/chartjs?label=chartjs)](https://www.chartjs.org/)
+[![js-cookie](https://img.shields.io/npm/v/js-cookie?label=js-cookie)](https://www.npmjs.com/package/js-cookie)
+[![next](https://img.shields.io/npm/v/next?label=next)](https://nextjs.org/)
+[![next-cookies](https://img.shields.io/npm/v/next-cookies?label=next-cookies)](https://www.npmjs.com/package/next-cookies)
+[![react](https://img.shields.io/npm/v/react?label=react)](https://reactjs.org/)
+[![react-bootstrap](https://img.shields.io/npm/v/react-bootstrap?label=react-bootstrap)](https://react-bootstrap.github.io/)
+[![react-chartjs-2](https://img.shields.io/npm/v/react-chartjs-2?label=react-chartjs-2)](https://www.npmjs.com/package/react-chartjs-2)
+[![react-dom](https://img.shields.io/npm/v/react-dom?label=react-dom)](https://reactjs.org/docs/react-dom.html)
+[![react-dropzone](https://img.shields.io/npm/v/react-dropzone?label=react-dropzone)](https://react-dropzone.js.org/)
+[![react-icons](https://img.shields.io/npm/v/react-icons?label=react-icons)](https://react-icons.github.io/react-icons/)
+[![react-modal](https://img.shields.io/npm/v/react-modal?label=react-modal)](https://www.npmjs.com/package/react-modal)
+[![react-paginate](https://img.shields.io/npm/v/react-paginate?label=react-paginate)](https://www.npmjs.com/package/react-paginate)
+[![react-redux](https://img.shields.io/npm/v/react-redux?label=react-redux)](https://react-redux.js.org/)
+[![react-router-dom](https://img.shields.io/npm/v/react-router-dom?label=react-router-dom)](https://www.npmjs.com/package/react-router-dom)
+[![redux](https://img.shields.io/npm/v/redux?label=redux)](https://redux.js.org/)
+[![redux-logger](https://img.shields.io/npm/v/redux-logger?label=redux-logger)](https://www.npmjs.com/package/redux-logger)
+[![redux-persist](https://img.shields.io/npm/v/redux-persist?label=redux-persist)](https://www.npmjs.com/package/redux-persist)
+[![redux-promise-middleware](https://img.shields.io/npm/v/redux-promise-middleware?label=redux-promise-middleware)](https://www.npmjs.com/package/redux-promise-middleware)
+
+<br>
+
+## **Contents**
+
+- [**Requirement**](#requirement)
+
+- [**Installation**](#installation)
+
+- [**Demo**](#demo)
+
+- [**License**](#license)
+
+<br>
+
+## **Requirement**
+
+- Node.js
+- node_modules : npm install or yarn install
+- Backend API
+
+<br>
+
+## **Installation**
+
+- Clone this repository
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone https://github.com/luthfidiqi/Fipay.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open Project Folder
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+$ cd Fipay
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Instal Depedencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+$ npm install
+```
 
-## Learn More
+- Add env in next.config.js
 
-To learn more about Next.js, take a look at the following resources:
+```
+URL_BACKEND=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Run the Project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+$ npm run dev
+```
 
-## Deploy on Vercel
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **Demo**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Link Website : [https://fipay.vercel.app/]
+
+<hr>
+
+<div display="flex">
+<img src="./public/img/preview-1.png" width="480" height="320" />
+<img src="./public/img/preview-2.png" width="480" height="320" />
+<img src="./public/img/preview-3.png" width="480" height="320" />
+</div>
+
+<hr>
+
+<br>
+
+## License
+
+© [Luthfi Thufail Asiddiqi](https://github.com/luthfidiqi/)
