@@ -74,7 +74,7 @@
 // import styles from "../styles/Home.module.css";
 // import Script from "next/script";
 // import Router from "next/router";
-import Login from "./auth/login";
+import Landing from "./landing";
 export default function Home() {
-  return <Login />;
+  return <Landing />;
 }

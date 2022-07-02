@@ -72,7 +72,7 @@ export default function Login() {
   return (
     <>
       <Head>
-        <title>Z-Wallet | Login</title>
+        <title>Fipay | Login</title>
       </Head>
       <main className="auth d-flex">
         <div className="auth-left">

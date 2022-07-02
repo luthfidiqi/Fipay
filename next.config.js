@@ -8,6 +8,10 @@ const nextConfig = {
   async rewrites() {
     return [
       {
+        source: "/landing",
+        destination: "/landing",
+      },
+      {
         source: "/login",
         destination: "/auth/login",
       },
