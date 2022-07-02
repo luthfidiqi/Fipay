@@ -1,7 +1,18 @@
 import React from "react";
 import Head from "next/head";
 
+import { useRouter } from "next/router";
+
 export default function Landing() {
+  const router = useRouter();
+
+  const handleLogin = async () => {
+    router.push("../../auth/login");
+  };
+
+  const handleSignup = async () => {
+    router.push("../../auth/register");
+  };
   return (
     <>
       <div>
@@ -12,10 +23,18 @@ export default function Landing() {
           <div class="container">
             <img src="../image/landing/fipay-nav.png" />
             <div>
-              <button type="button" class="btn-white-outline me-3">
+              <button
+                type="button"
+                class="btn-white-outline me-3"
+                onClick={handleLogin}
+              >
                 Login
               </button>
-              <button type="button" class="btn-white-solid">
+              <button
+                type="button"
+                class="btn-white-solid"
+                onClick={handleSignup}
+              >
                 Sign Up
               </button>
             </div>
@@ -30,7 +49,11 @@ export default function Landing() {
                 We bring you a mobile app for banking problems that oftenly
                 wasting much of your times.
               </p>
-              <button type="button" class="btn-white-solid">
+              <button
+                type="button"
+                class="btn-white-solid"
+                onClick={handleSignup}
+              >
                 Try It Free
               </button>
             </div>
