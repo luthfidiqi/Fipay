@@ -17,7 +17,7 @@ export default function Landing() {
     <>
       <div>
         <Head>
-          <title>Fipay | Landing Page</title>
+          <title>Fipay</title>
         </Head>
         <div class="navbar">
           <div class="container">

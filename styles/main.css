@@ -5,6 +5,30 @@
   top: 0 !important;
 }
 
+.btn-profile-user {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.profile-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-user h3 {
+  color: #3a3d42;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.profile-user p {
+  color: #3a3d42;
+  font-size: 14px;
+  margin: 0;
+}
+
 /* LAOYOUT */
 .content-main {
   width: 100%;

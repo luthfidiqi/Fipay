@@ -4,6 +4,7 @@ import "../styles/navbar.css";
 import "../styles/landing.css";
 import "../styles/main.css";
 import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/js/bootstrap.js";
 
 import { Provider } from "react-redux";
 import { store } from "../stores";

@@ -1,16 +1,22 @@
 import React from "react";
 
-// Assets IMG
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Navbar() {
+  const router = useRouter();
+
+  const handleProfile = async () => {
+    router.push("../profile");
+  };
   return (
     <>
       <div>
         <nav class="navbar-main navbar navbar-expand-lg navbar-light bg-light">
           <div class="container">
-            <a class="navbar-brand" href="../home">
+            <Link class="navbar-brand" href="../dashboard">
               <img src="../image/fipay-blue.png" />
-            </a>
+            </Link>
             <button
               class="navbar-toggler"
               type="button"
@@ -28,18 +34,28 @@ function Navbar() {
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="../home"
+                    href="../dashboard"
                   ></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="/"></a>
                 </li>
               </ul>
-              <a href="../profile_accountSet">
-                <div class="d-flex">
-                  <img src="../assets/image/user-nav.png" />
+              <button
+                type="button"
+                className="btn-profile-user"
+                onClick={handleProfile}
+              >
+                <div class="profile-user">
+                  <div>
+                    <img src="../image/nav-user.png" />
+                  </div>
+                  <div className="ms-3">
+                    <h3>Robert Chandler</h3>
+                    <p>+62 8139 3877 7946</p>
+                  </div>
                 </div>
-              </a>
+              </button>
             </div>
           </div>
         </nav>
