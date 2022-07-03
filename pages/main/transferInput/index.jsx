@@ -40,7 +40,7 @@ export default function InputTransfer() {
                 the next steps.
               </p>
               <form className="topup-form mt-5">
-                <div className="mb-3 d-flex justify-content-between">
+                <div className="d-flex justify-content-between">
                   <label>Amount Transfer</label>
                   <p>Rp120.000 Available</p>
                 </div>

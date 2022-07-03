@@ -1,7 +1,26 @@
 import React from "react";
 import Layout from "../../../component/Layout/main";
 
+import { useRouter } from "next/router";
+
 export default function Profile() {
+  const router = useRouter();
+
+  const handleInfo = async () => {
+    router.push("./profileInfo");
+  };
+
+  const handlePass = async () => {
+    router.push("./profilePass");
+  };
+
+  const handlePin = async () => {
+    router.push("./profilePin");
+  };
+
+  const handleLogout = async () => {
+    router.push("/");
+  };
   return (
     <>
       <div>
@@ -19,19 +38,19 @@ export default function Profile() {
             <h1>Robert Chandler</h1>
             <p>+62 813-9387-7946</p>
             <div className="profile-menu mt-4">
-              <button type="button">
+              <button type="button" onClick={handleInfo}>
                 <span> Personal Information </span>
                 <img src="../image/main/arrow-left.png" />
               </button>
-              <button type="button" className="mt-3">
+              <button type="button" className="mt-3" onClick={handlePass}>
                 <span> Change Password </span>
                 <img src="../image/main/arrow-left.png" />
               </button>
-              <button type="button" className="mt-3">
+              <button type="button" className="mt-3" onClick={handlePin}>
                 <span> Change PIN </span>
                 <img src="../image/main/arrow-left.png" />
               </button>
-              <button type="button" className="mt-3">
+              <button type="button" className="mt-3" onClick={handleLogout}>
                 <span> Logout </span>
                 {/* <img src="../image/main/arrow-left.png" /> */}
               </button>

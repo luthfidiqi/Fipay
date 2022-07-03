@@ -64,6 +64,22 @@ const nextConfig = {
         destination: "/main/profile",
       },
       {
+        source: "/profileInfo",
+        destination: "/main/profileInfo",
+      },
+      {
+        source: "/profilePass",
+        destination: "/main/profilePass",
+      },
+      {
+        source: "/profilePin",
+        destination: "/main/profilePin",
+      },
+      {
+        source: "/profilePhone",
+        destination: "/main/profilePhone",
+      },
+      {
         source: "/profile/:id",
         destination: "/user/:id",
       },
