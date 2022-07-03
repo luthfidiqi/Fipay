@@ -44,6 +44,18 @@ const nextConfig = {
         destination: "/main/transfer",
       },
       {
+        source: "/transferInput",
+        destination: "/main/transferInput",
+      },
+      {
+        source: "/transferConfirm",
+        destination: "/main/transferConfirm",
+      },
+      {
+        source: "/transferStatus",
+        destination: "/main/transferStatus",
+      },
+      {
         source: "/topup",
         destination: "/main/topup",
       },

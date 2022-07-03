@@ -19,20 +19,20 @@ export default function Landing() {
         <Head>
           <title>Fipay</title>
         </Head>
-        <div class="navbar">
-          <div class="container">
+        <div className="navbar">
+          <div className="container">
             <img src="../image/landing/fipay-nav.png" />
             <div>
               <button
                 type="button"
-                class="btn-white-outline me-3"
+                className="btn-white-outline me-3"
                 onClick={handleLogin}
               >
                 Login
               </button>
               <button
                 type="button"
-                class="btn-white-solid"
+                className="btn-white-solid"
                 onClick={handleSignup}
               >
                 Sign Up
@@ -51,7 +51,7 @@ export default function Landing() {
               </p>
               <button
                 type="button"
-                class="btn-white-solid"
+                className="btn-white-solid"
                 onClick={handleSignup}
               >
                 Try It Free

@@ -55,7 +55,7 @@ export default function Dashboard() {
               <div className="dash-down-right">
                 <div className="menu-title-main d-flex justify-content-between align-items-center mb-4">
                   <h3>Transaction History</h3>
-                  <Link href="/">See all</Link>
+                  <Link href="../history">See all</Link>
                 </div>
                 <div className="user-box">
                   <div className="d-flex justify-content-between align-items-center">

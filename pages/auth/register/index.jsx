@@ -68,7 +68,7 @@ export default function Register() {
             users coverage.
           </p>
         </div>
-        <div class="auth-right">
+        <div className="auth-right">
           <h2>
             Start Accessing Banking Needs With All Devices and All Platforms
             With 30.000+ Users

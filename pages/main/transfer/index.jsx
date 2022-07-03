@@ -1,8 +1,14 @@
 import React from "react";
 import Layout from "../../../component/Layout/main";
-import Link from "next/link";
+
+import { useRouter } from "next/router";
 
 export default function Transfer() {
+  const router = useRouter();
+
+  const handleSelect = async () => {
+    router.push("./transferInput");
+  };
   return (
     <>
       <div>
@@ -11,7 +17,7 @@ export default function Transfer() {
             <div className="menu-title-main d-flex justify-content-between align-items-center mb-4">
               <h3>Search Receiver</h3>
             </div>
-            <button className="transaction-user">
+            <button className="transaction-user" onClick={handleSelect}>
               <div className="user-box">
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="me-3">
