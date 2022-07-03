@@ -87,9 +87,9 @@ $ npm run dev
 <hr>
 
 <div display="flex">
-<img src="./public/img/preview-1.png" width="480" height="320" />
-<img src="./public/img/preview-2.png" width="480" height="320" />
-<img src="./public/img/preview-3.png" width="480" height="320" />
+<img src="./public/image/preview-1.png" width="480" height="320" />
+<img src="./public/image/preview-2.png" width="480" height="320" />
+<img src="./public/image/preview-3.png" width="480" height="320" />
 </div>
 
 <hr>
