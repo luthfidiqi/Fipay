@@ -1,15 +1,23 @@
 import React from "react";
-import Navbar from "../Navbar";
 import Head from "next/head";
+import Navbar from "../Navbar";
+import Sidebar from "../Sidebar";
+import Footer from "../Footer";
 
 export default function MainLayout(props) {
   return (
     <>
-      <Head>
-        <title>{props.title}</title>
-      </Head>
-      <Navbar />
-      <main>{props.children}</main>
+      <div className="main-layout">
+        <Head>
+          <title>Fipay</title>
+        </Head>
+        <Navbar />
+        <div className="content-main container d-flex mt-5 mb-5">
+          <Sidebar />
+          <main>{props.children}</main>
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }

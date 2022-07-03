@@ -32,6 +32,26 @@ const nextConfig = {
         destination: "/main/home",
       },
       {
+        source: "/history",
+        destination: "/main/history",
+      },
+      {
+        source: "/dashboard",
+        destination: "/main/dashboard",
+      },
+      {
+        source: "/transfer",
+        destination: "/main/transfer",
+      },
+      {
+        source: "/topup",
+        destination: "/main/topup",
+      },
+      {
+        source: "/profile",
+        destination: "/main/profile",
+      },
+      {
         source: "/profile/:id",
         destination: "/user/:id",
       },

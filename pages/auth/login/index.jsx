@@ -6,6 +6,8 @@ import axios from "../../../utils/axios";
 // import Cookies from "js-cookie";
 import { useRouter } from "next/router";
 
+import Link from "next/link";
+
 export default function Login() {
   const router = useRouter();
 
@@ -49,7 +51,7 @@ export default function Login() {
       localStorage.setItem("refreshToken", resultLogin.data.data.refreshToken);
       localStorage.setItem("dataUser", JSON.stringify(resultUser[0]));
       // navigate("../../main/home");
-      router.push("../../main/home");
+      router.push("../../main/dashboard");
     } catch (error) {
       console.log(error.response);
       setIsError(true);
@@ -72,11 +74,11 @@ export default function Login() {
   return (
     <>
       <Head>
-        <title>Fipay | Login</title>
+        <title>Fipay</title>
       </Head>
       <main className="auth d-flex">
         <div className="auth-left">
-          <h1>Zwallet</h1>
+          <h1>Fipay</h1>
           <img src="../assets/image/auth-img.png" />
           <h2>App that Covering Banking Needs.</h2>
           <p className="zwalet-desc">
@@ -141,9 +143,9 @@ export default function Login() {
             )}
 
             <div className="forgot-pass d-flex justify-content-end mb-5">
-              <a className="forgot-pass" href="/auth/reset">
+              <Link className="forgot-pass" href="/auth/reset">
                 Forgot Password ?
-              </a>
+              </Link>
             </div>
 
             <button
@@ -159,12 +161,10 @@ export default function Login() {
           </form>
           <div className="signup-link">
             <p>
-              {" "}
-              Don’t have an account? Let’s{" "}
+              Don’t have an account? Let’s
               <span>
-                {" "}
-                <a href="/auth/register"> Sign Up </a>{" "}
-              </span>{" "}
+                <Link href="/auth/register"> Sign Up </Link>
+              </span>
             </p>
           </div>
         </div>

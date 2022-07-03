@@ -9,6 +9,12 @@
 
 /* LEFT SIDE */
 
+.forgot-pass a {
+  text-decoration: none;
+  color: #3a3d42;
+  font-size: 14px;
+}
+
 .auth-left {
   background-image: url(../public/assets/image/auth-bg-img.png);
   background-size: cover;

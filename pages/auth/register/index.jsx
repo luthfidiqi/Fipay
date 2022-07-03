@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Register() {
   const router = useRouter();
@@ -53,11 +54,11 @@ export default function Register() {
     <>
       <ToastContainer />
       <Head>
-        <title>Z-Wallet | Sign-Up</title>
+        <title>Fipay</title>
       </Head>
       <main className="auth d-flex">
         <div className="auth-left">
-          <h1>Zwallet</h1>
+          <h1>Fipay</h1>
           <img src="../assets/image/auth-img.png" />
           <h2>App that Covering Banking Needs.</h2>
           <p className="zwalet-desc">
@@ -152,12 +153,10 @@ export default function Register() {
           </form>
           <div className="signup-link">
             <p>
-              {" "}
-              Already have an account? Let’s{" "}
+              Already have an account? Let’s
               <span>
-                {" "}
-                <a href="/auth/login"> Login </a>{" "}
-              </span>{" "}
+                <Link href="/auth/login"> Login </Link>
+              </span>
             </p>
           </div>
         </div>
