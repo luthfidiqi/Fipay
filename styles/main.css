@@ -225,6 +225,45 @@ footer {
 }
 
 /* ---------------------- TOP UP */
+.topup {
+  width: 1000px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 20px #00000018;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.topup p {
+  color: #3a3d42;
+  font-size: 16px;
+}
+
+.topup-form input {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #a9a9a994;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.purple-btn {
+  border: 1px solid #6379f4;
+  color: white;
+  background-color: #6379f4;
+  padding: 15px 50px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
 
 /* ---------------------- PROFILE */
 .profile {
