@@ -162,7 +162,7 @@ export default function Landing() {
             </p>
             <div className="testi-card">
               <img src="../image/landing/testi-user.png" />
-              <h4>Alex Hansinburg</h4>
+              <h4>Luthfi Thufail Asiddiqi</h4>
               <h5>Designer</h5>
               <p>
                 “This is the most outstanding app that I’ve ever try in my live,
@@ -186,7 +186,7 @@ export default function Landing() {
               <p>2022 Fipay. All right reserved.</p>
               <div className="d-flex">
                 <p className="me-3">+62 5637 8882 9901</p>
-                <p>contact@fipay.com</p>
+                <p>luthfidiqi@fipay.com</p>
               </div>
             </div>
           </div>
